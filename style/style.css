@@ -163,6 +163,10 @@ section.headphones .item-headphones p{
 	text-decoration: none;
 }
 
+.news-app{
+	margin-top: 90px;
+}
+
 .news-app h2{
 	text-align: center;
 	color: #fff;
