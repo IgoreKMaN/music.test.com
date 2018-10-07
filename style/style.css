@@ -30,8 +30,12 @@ body{
 	background: linear-gradient(to top, #000000, #0a2345);
 }
 
-p, h2{
+p, h2, h3, h4{
 	font-family: montserrat-regular;
+}
+
+h2{
+	font-size: 2.3rem;
 }
 
 header .top{
@@ -68,8 +72,6 @@ section .coeluso{
 }
 
 section .coeluso h2{
-	font-family: montserrat-regular;
-	font-size: 3rem;
 	margin-bottom: 40px;
 }
 
@@ -124,6 +126,11 @@ section .coeluso-music-app .item-right{
 
 section .coeluso-music-app .music-item img{
 	box-shadow: 0px 0px 40px 5px rgba(0,0,0,.5);
+	transition: all 0.5s;
+}
+
+section .coeluso-music-app .music-item img:hover{
+	transform: scale(1.2);
 }
 
 section.headphones{
@@ -136,8 +143,8 @@ section.headphones{
 }
 
 section.headphones .block-headphones{
-	margin-top: 30px;
-	margin-bottom: 50px;
+	margin-top: 3%;
+	margin-bottom: 1%;
 }
 
 section.headphones .item-headphones h2{
@@ -167,7 +174,76 @@ section.headphones .item-headphones p{
 	margin-top: 90px;
 }
 
+.news-app .news-app-img{
+	background-image: url(../img/phone-news.png);	
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 700px;
+	margin-top: 140px;
+}
+
 .news-app h2{
 	text-align: center;
 	color: #fff;
 }
+
+.news-app .title-and-item{
+	color: #fff;
+	background-repeat: no-repeat;
+}
+
+.news-app .spiker{
+	background-image: url(../img/Speaker-mini.png);
+}
+
+.news-app .headphones{
+	background-image: url(../img/Headphones-mini.png);
+}
+
+.news-app .activity{
+	background-image: url(../img/Activity-mini.png);	
+}
+
+.news-app .cd{
+	background-image: url(../img/CD-mini.png);	
+}
+
+.news-app .activity,
+.news-app .cd{
+	margin-top: 50px;
+}
+
+.news-app .title-and-item{
+	padding-top: 15%; 
+}
+
+.news-app .title-and-item p,
+.about-app .item-about-app p{
+	 font-size: 0.9rem;
+	 line-height: 30px;
+}
+
+.about{
+	background-image: url(../img/Graphic.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	-webkit-background-size: 70%;
+		background-size: 70%;
+	margin-top: 8%;
+	padding: 10% 0 25%; 	
+}
+
+.about-app{
+	color: #fff;
+}
+
+.about-app .item-about-app{
+	padding-top: 15%;
+}
+
+.about-app .icon{
+	background-image: url(../img/Icon-mini.png);
+	background-repeat: no-repeat;
+}
+
+
