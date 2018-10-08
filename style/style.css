@@ -248,11 +248,52 @@ section.headphones .item-headphones p{
 
 
 .slider{
-	height: 600px;
-	border: 1px solid red;
+	height: 400px;
 	background-image: url(../img/bgslider.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
+
+.slider .slider-item{
+	float: left;
+	margin-top: 10%;
+	text-align: center;
+}
+
+.slider .slider-item .text-slider{
+	font-size: 1.5rem;
+}
+
+.slider .slider-item .text-slider,
+.slider .slider-item .photo-slider .name-human{
+	color: #66778e;
+
+}
+
+.slider .slider-item .photo-slider{
+	margin-top: 10%;
+	color: #213a61;
+    font-size: 0.9rem;	
+}
+
+.slider .slider-item .photo-slider .name-human{
+	background-image: url(../img/photo-slider1.png);
+    background-repeat: no-repeat;
+    padding: 2.2% 0 2.2% 10%;
+}
+
+.slider .slider-radio .slider-item{
+	display: inline-block;
+	width: 20%;
+}
+
+
+
+
+
+
+
+
+
 
