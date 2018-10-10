@@ -261,15 +261,11 @@ section.headphones .item-headphones p{
 .slides{
   width:500%;
   height:100%;
-  
-  -webkit-animation:slide 30s infinite;
-  -moz-animation:slide 30s infinite;
-  animation:slide 30s infinite;
+  transition: all 0.5s;
 }
 
 .slider-item{
 	width: 20%;
- 	
  	float: left;
  	position: relative;
  	z-index: 1;
@@ -283,11 +279,58 @@ section.headphones .item-headphones p{
 
 }
 
+.radio-button{
+	position: absolute;
+	left: calc(50% - 100px);
+	bottom: 10%;
+	margin: 0 auto;
+}
 
+#slider input[type="radio"]{
+	display: none;
+}
 
+.radio-button label{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	border: 1px solid #335a95;
+	margin: 10px;
+}
 
+.radio-button label:hover{
+	background-color: #335a95;
+}
 
+section #slide1:checked ~ .radio-button label[for="slide1"],
+section #slide2:checked ~ .radio-button label[for="slide2"],
+section #slide3:checked ~ .radio-button label[for="slide3"],
+section #slide4:checked ~ .radio-button label[for="slide4"],
+section #slide5:checked ~ .radio-button label[for="slide5"]{
+	background-color: #335a95;
 
+}
+
+#slider #slide1:checked ~ .slides{
+	margin-left: 0;
+}
+
+#slider #slide2:checked ~ .slides{
+	margin-left: -100%;
+}
+
+#slider #slide3:checked ~ .slides{
+	margin-left: -200%;
+}
+
+#slider #slide4:checked ~ .slides{
+	margin-left: -300%;
+}
+
+#slider #slide5:checked ~ .slides{
+	margin-left: -400%;
+}
 
 .slider-item .text-slider{
 	font-size: 1.5rem;
@@ -312,142 +355,7 @@ section.headphones .item-headphones p{
     padding: 2.2% 0 2.2% 10%;
 }
 
-.radio-button{
-	position: absolute;
-	left: calc(50% - 100px);
-	bottom: 10%;
-	margin: 0 auto;
-}
 
-.radio-button input[type="radio"]{
-	display: none;
-}
-
-.radio-button label{
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border-radius: 50px;
-	border: 1px solid #335a95;
-	margin: 10px;
-}
-
-.radio-button label:hover{
-	background-color: #335a95;
-}
-
-
-
-.radio-button #slide1:checked ~ label[for="slide1"],
-.radio-button #slide2:checked ~ label[for="slide2"],
-.radio-button #slide3:checked ~ label[for="slide3"],
-.radio-button #slide4:checked ~ label[for="slide4"],
-.radio-button #slide5:checked ~ label[for="slide5"]{
-	background-color: #335a95;
-}
-
-.radio-button #slide1:checked + .radio-button{
-	border: 1px splid red;
-}
-
-.radio-button #slide2:checked + .radio-button{
-	border: 1px splid red;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Animation */
-/*@-webkit-keyframes slide{
-  0%,100%{
-    margin-left:0%;
-  }
-  21%{
-    margin-left:0%;
-  }
-  25%{
-    margin-left:-100%;
-  }
-  46%{
-    margin-left:-100%;
-  }
-  50%{
-    margin-left:-200%;
-  }
-  71%{
-    margin-left:-200%;
-  }
-  75%{
-    margin-left:-300%;
-  }
-  96%{
-    margin-left:-300%;
-  }
-}
-@-moz-keyframes slide{
-  0%,100%{
-    margin-left:0%;
-  }
-  21%{
-    margin-left:0%;
-  }
-  25%{
-    margin-left:-100%;
-  }
-  46%{
-    margin-left:-100%;
-  }
-  50%{
-    margin-left:-200%;
-  }
-  71%{
-    margin-left:-200%;
-  }
-  75%{
-    margin-left:-300%;
-  }
-  96%{
-    margin-left:-300%;
-  }
-}
-@keyframes slide{
-  0%,100%{
-    margin-left:0%;
-  }
-  21%{
-    margin-left:0%;
-  }
-  25%{
-    margin-left:-100%;
-  }
-  46%{
-    margin-left:-100%;
-  }
-  50%{
-    margin-left:-200%;
-  }
-  71%{
-    margin-left:-200%;
-  }
-  75%{
-    margin-left:-300%;
-  }
-  96%{
-    margin-left:-300%;
-  }
-}
 
 
 
