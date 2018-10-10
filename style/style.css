@@ -249,19 +249,19 @@ section.headphones .item-headphones p{
 
 #slider{
 	width:100%;
- 	height:500px;
- 	position:relative;
+ 	height:400px;
+ 	position: relative;
  	overflow:hidden;
 	background-image: url(../img/bgslider.png);
 	background-repeat: no-repeat;
-	-webkit-background-size: contain;
-	background-size: contain;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .slides{
   width:500%;
   height:100%;
-  position:relative;
+  
   -webkit-animation:slide 30s infinite;
   -moz-animation:slide 30s infinite;
   animation:slide 30s infinite;
@@ -269,7 +269,7 @@ section.headphones .item-headphones p{
 
 .slider-item{
 	width: 20%;
- 	//height: 100%;
+ 	
  	float: left;
  	position: relative;
  	z-index: 1;
@@ -300,7 +300,8 @@ section.headphones .item-headphones p{
 }
 
 .slider-item .photo-slider{
-	margin-top: 10%;
+	margin-top: 8%;
+	margin-bottom: 2%;
 	color: #213a61;
     font-size: 0.9rem;	
 }
@@ -311,7 +312,47 @@ section.headphones .item-headphones p{
     padding: 2.2% 0 2.2% 10%;
 }
 
+.radio-button{
+	position: absolute;
+	left: calc(50% - 100px);
+	bottom: 10%;
+	margin: 0 auto;
+}
 
+.radio-button input[type="radio"]{
+	display: none;
+}
+
+.radio-button label{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	border: 1px solid #335a95;
+	margin: 10px;
+}
+
+.radio-button label:hover{
+	background-color: #335a95;
+}
+
+
+
+.radio-button #slide1:checked ~ label[for="slide1"],
+.radio-button #slide2:checked ~ label[for="slide2"],
+.radio-button #slide3:checked ~ label[for="slide3"],
+.radio-button #slide4:checked ~ label[for="slide4"],
+.radio-button #slide5:checked ~ label[for="slide5"]{
+	background-color: #335a95;
+}
+
+.radio-button #slide1:checked + .radio-button{
+	border: 1px splid red;
+}
+
+.radio-button #slide2:checked + .radio-button{
+	border: 1px splid red;
+}
 
 
 
@@ -329,7 +370,7 @@ section.headphones .item-headphones p{
 
 
 /* Animation */
-@-webkit-keyframes slide{
+/*@-webkit-keyframes slide{
   0%,100%{
     margin-left:0%;
   }
