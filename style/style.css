@@ -356,6 +356,43 @@ section #slide5:checked ~ .radio-button label[for="slide5"]{
 }
 
 
+.bottom-page .bottom-box{
+	margin-top: 10%;
+	text-align: center;	
+}
+
+.bottom-page .bottom-box h2{
+	color: #fff;
+}
+
+.bottom-page .bottom-box p{
+	color: #617189;
+}
+
+
+
+.bottom-page .bottom-box .bottom-item{
+	margin-top: 70%;
+}
+
+.bottom-page .bottom-box .bottom-item img{
+	width: 100%;
+}
+
+.bottom-page .bottom-box .item-right{
+	text-align: right;
+}
+
+.bottom-page .bottom-box .item-center{
+	text-align: center;
+	position: relative;
+	top: -100px;
+}
+
+.bottom-page .bottom-box .item-left{
+	text-align: left;
+}
+
 
 
 
