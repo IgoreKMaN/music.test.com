@@ -330,6 +330,7 @@ section.headphones .item-headphones p{
 	border-radius: 50px;
 	border: 1px solid #335a95;
 	margin: 10px;
+	cursor: pointer;
 }
 
 .radio-button label:hover{
